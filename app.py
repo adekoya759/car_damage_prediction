@@ -3,6 +3,12 @@ from model_helper import predict
 
 st.title("Vehicle Damage Detection")
 
+st.caption(
+    "Upload a clear photo of a vehicle's front or rear. "
+    "The model classifies it as: Front Breakage, Front Crushed, Front Normal, "
+    "Rear Breakage, Rear Crushed, or Rear Normal."
+)
+
 uploaded_file = st.file_uploader("Upload the file", type=["jpg", "png"])
 
 if uploaded_file:
