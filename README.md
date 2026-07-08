@@ -125,7 +125,7 @@ Update the `dataset_path` variable in the notebook to point to your local copy.
 
 ## Usage
 
-1. Open `car_damage_prediction.ipynb` in Jupyter Notebook, JupyterLab, Kaggle, or Google Colab.
+1. Open `car_damage_prediction.ipynb` in Jupyter Notebook, JupyterLab, Kaggle, or Google Colab. - https://www.kaggle.com/code/adekoyaoluwatobi/car-damage-prediction 
 2. Run all cells sequentially to:
    - Load and preprocess the dataset
    - Train the ResNet50 and DenseNet121 classifiers
