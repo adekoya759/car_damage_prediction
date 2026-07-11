@@ -96,22 +96,45 @@ Both models were trained under identical conditions to allow a fair, apples-to-a
 
 ## Setup & Installation
 
-### Prerequisites
-- Python 3.9+
-- CUDA-capable GPU (recommended; the notebook was trained on a Kaggle T4 GPU)
+Choose one of the two methods below.
 
-### 1. Clone the repository
+### Option A: Run with Docker
+
+Pull and run the pre-built image:
 ```bash
-git clone https://github.com/adekoya759/car_damage_prediction 
+docker pull adekoya759/car_damage_prediction:latest
+docker run -p 8501:8501 adekoya759/car_damage_prediction:latest
+```
+
+Or build from source:
+```bash
+git clone https://github.com/adekoya759/car_damage_prediction
+cd car_damage_prediction
+docker build -t car_damage_prediction:latest .
+docker run -p 8501:8501 car_damage_prediction:latest
+```
+
+Then visit `http://localhost:8501`.
+
+### Option B: Manual Setup
+
+**Prerequisites**
+- Python 3.9+
+- CUDA-capable GPU (optional — only needed for retraining; the model was trained on a Kaggle T4 GPU. Inference runs fine on CPU.)
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/adekoya759/car_damage_prediction
 cd car_damage_prediction
 ```
 
-### 2. Create a virtual environment and install dependencies
+**2. Create a virtual environment and install dependencies**
 ```bash
 python -m venv venv
 source venv/bin/activate      # On Windows: venv\Scripts\activate
 
 pip install torch torchvision scikit-learn pandas matplotlib
+
 ```
 
 ### 3. Download the dataset
