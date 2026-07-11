@@ -1,5 +1,9 @@
 # Car Damage Classification
 
+
+![Docker Build](https://github.com/adekoya759/car_damage_prediction/actions/workflows/docker-build.yml/badge.svg)
+
+
 Deep learning system that classifies car exterior damage from images into six categories (front/rear breakage, crushed, or normal) using transfer learning with pretrained CNN architectures.
 
 ## 📸 Sample Images from the Six Vehicle Damage Classes
